@@ -1,10 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   const [counter, setCounter] = useState(0);
+
+  useEffect(() => {
+    console.log('First render... => componentDidMount');
+
+    return () => {
+      console.log('Desmontando o componente... => componentWillUnmount');
+    }
+  }, []);
+
+  useEffect(() => {
+    console.log(`Counter ${counter} => componentDidUpdate`);
+  }, [counter]);
 
   function handlePlus() {
     setTimeout(() => {
