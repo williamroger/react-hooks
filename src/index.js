@@ -4,13 +4,14 @@ import './index.css';
 // import AppUseState from './AppUseState';
 // import AppUseEffect from './AppUseEffect';
 // import AppUseContext from './AppUseContext';
-import AppUseReducer from './AppUseReducer';
+// import AppUseReducer from './AppUseReducer';
+import AppUseCallback from './AppUseCallback';
 
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <AppUseReducer />
+    <AppUseCallback />
   </React.StrictMode>,
   document.getElementById('root')
 );
