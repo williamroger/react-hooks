@@ -6,13 +6,14 @@ import './index.css';
 // import AppUseContext from './AppUseContext';
 // import AppUseReducer from './AppUseReducer';
 // import AppUseCallback from './AppUseCallback';
-import AppUseMemo from './AppUseMemo';
+// import AppUseMemo from './AppUseMemo';
+import AppUseRef from './AppUseRef';
 
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <AppUseMemo />
+    <AppUseRef />
   </React.StrictMode>,
   document.getElementById('root')
 );
