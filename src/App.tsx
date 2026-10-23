@@ -1,12 +1,11 @@
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
+import { UseState } from './hooks/01-useState';
 
 export function App() {
   return (
-    <div>
-      <h3 className="text-3xl font-bold underline">App Vite</h3>
-      <Input />
-      <Button>Shad Button</Button>
+    <div className="min-h-screen grid place-items-center">
+      <div className="w-full max-w-lg">
+        <UseState />
+      </div>
     </div>
   )
 }
